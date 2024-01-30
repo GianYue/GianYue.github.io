@@ -37,14 +37,14 @@ copy:
 #   icon: link || the description
 social:
   fab fa-github: https://github.com/GianYue || Github
-  fas fa-envelope: mailto:1302187336@qq.com || Email
+  fas fa-envelope: mailto:bingmen2020@outlook.com || Email
 
 # search (搜索)
 # --------------------------------------
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
 
@@ -55,7 +55,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: false
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -87,13 +87,13 @@ favicon: /img/favicon.png
 # Avatar (頭像)
 avatar:
   img: /img/avatar.png
-  effect: false
+  effect: true
 
 # the banner image of home page
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: https://i.ibb.co/fC870Qz/baitian.png
 
 # the banner image of archive page
 archive_img:
@@ -123,7 +123,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.ibb.co/fC870Qz/baitian.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -148,7 +148,7 @@ post_meta:
 
 # wordcount (字數統計)
 wordcount:
-  enable: true
+  enable: false
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -455,9 +455,8 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-# 首页大图
-# background: url(https://s1.ax1x.com/2022/05/20/OLpgmD.jpg),
-# bodyBgImgOpacity: 1, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
+background:
+
 # Show the footer background image (same as top_img)
 footer_bg: false
 
@@ -535,7 +534,7 @@ font:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
-blog_title_font: 简月の博客
+blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
   font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', Microsoft YaHei', sans-serif
 
@@ -546,19 +545,19 @@ hr_icon:
   icon-top:
 
 # the subtitle on homepage (主頁subtitle)
-subtitle:'学如逆水行舟，不进则退！'
+subtitle:
   enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
   loop: true
   # source調用第三方服務
-  source: true 關閉調用
-  source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
-  source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
-  source: 3  調用一句網（簡體） http://yijuzhan.com/
-  source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
-  subtitle 會先顯示 source , 再顯示 sub 的內容
+  # source: false 關閉調用
+  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 3  調用一句網（簡體） http://yijuzhan.com/
+  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;

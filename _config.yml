@@ -46,7 +46,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -82,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -109,7 +109,7 @@ deploy:
 
 # bilibili番剧列表配置
 bangumi:
-  enable: true 
+  enable: true
   vmid: '652404306'
   title: '追番列表'
   quote: '生命不息，追番不止！'
@@ -132,7 +132,7 @@ live2d:
 # 添加豆瓣
 # 豆瓣
 douban:
-  user: 211251422
+  user: false
   builtin: true
   book:
     title: '好书推荐'
